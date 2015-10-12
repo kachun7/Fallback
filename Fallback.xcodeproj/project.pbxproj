@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04306EB41BC92C0600261FB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04306EB31BC92C0600261FB8 /* Localizable.strings */; settings = {ASSET_TAGS = (); }; };
+		04306EB61BC92C6B00261FB8 /* KCRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04306EB51BC92C6B00261FB8 /* KCRootViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		04306EF71BC93FFB00261FB8 /* SpaceShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04306EF61BC93FFB00261FB8 /* SpaceShip.swift */; settings = {ASSET_TAGS = (); }; };
 		048EF42D1BC92A0600080730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EF42C1BC92A0600080730 /* AppDelegate.swift */; };
 		048EF42F1BC92A0600080730 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 048EF42E1BC92A0600080730 /* GameScene.sks */; };
 		048EF4311BC92A0600080730 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EF4301BC92A0600080730 /* GameScene.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04306EB31BC92C0600261FB8 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		04306EB51BC92C6B00261FB8 /* KCRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCRootViewController.swift; path = ViewController/KCRootViewController.swift; sourceTree = "<group>"; };
+		04306EF61BC93FFB00261FB8 /* SpaceShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpaceShip.swift; path = Sprite/SpaceShip.swift; sourceTree = "<group>"; };
 		048EF4291BC92A0600080730 /* Fallback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fallback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048EF42C1BC92A0600080730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		048EF42E1BC92A0600080730 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -78,6 +84,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04306EB21BC92BDD00261FB8 /* ViewControler */ = {
+			isa = PBXGroup;
+			children = (
+				04306EB51BC92C6B00261FB8 /* KCRootViewController.swift */,
+			);
+			name = ViewControler;
+			sourceTree = "<group>";
+		};
+		04306EF51BC93FDB00261FB8 /* Sprite */ = {
+			isa = PBXGroup;
+			children = (
+				04306EF61BC93FFB00261FB8 /* SpaceShip.swift */,
+			);
+			name = Sprite;
+			sourceTree = "<group>";
+		};
 		048EF4201BC92A0600080730 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +123,9 @@
 		048EF42B1BC92A0600080730 /* Fallback */ = {
 			isa = PBXGroup;
 			children = (
+				04306EF51BC93FDB00261FB8 /* Sprite */,
+				04306EB31BC92C0600261FB8 /* Localizable.strings */,
+				04306EB21BC92BDD00261FB8 /* ViewControler */,
 				048EF42C1BC92A0600080730 /* AppDelegate.swift */,
 				048EF42E1BC92A0600080730 /* GameScene.sks */,
 				048EF4301BC92A0600080730 /* GameScene.swift */,
@@ -234,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04306EB41BC92C0600261FB8 /* Localizable.strings in Resources */,
 				048EF42F1BC92A0600080730 /* GameScene.sks in Resources */,
 				048EF43B1BC92A0600080730 /* LaunchScreen.storyboard in Resources */,
 				048EF4381BC92A0600080730 /* Assets.xcassets in Resources */,
@@ -264,6 +290,8 @@
 			files = (
 				048EF4311BC92A0600080730 /* GameScene.swift in Sources */,
 				048EF4331BC92A0600080730 /* GameViewController.swift in Sources */,
+				04306EF71BC93FFB00261FB8 /* SpaceShip.swift in Sources */,
+				04306EB61BC92C6B00261FB8 /* KCRootViewController.swift in Sources */,
 				048EF42D1BC92A0600080730 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +521,7 @@
 				048EF4571BC92A0600080730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		048EF4581BC92A0600080730 /* Build configuration list for PBXNativeTarget "FallbackTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +530,7 @@
 				048EF45A1BC92A0600080730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		048EF45B1BC92A0600080730 /* Build configuration list for PBXNativeTarget "FallbackUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +539,7 @@
 				048EF45D1BC92A0600080730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
